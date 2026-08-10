@@ -1,3 +1,6 @@
+from submenus.comprar import comprar
+from submenus.vender import vender
+
 while True:
     print(f"="*20)
 
@@ -7,4 +10,16 @@ while True:
     print(f"(0) Salir de la app")
     print(f"="*20)
 
-    input("Opcion: ")
+    opc = int(input("Opcion: "))
+
+    if opc == 0:
+        break
+
+    if opc == 1:
+        comprar()
+        continue
+
+    if opc == 2:
+        vender()
+        continue
+
