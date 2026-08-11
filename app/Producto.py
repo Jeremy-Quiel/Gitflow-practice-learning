@@ -5,6 +5,43 @@ class Producto:
         self.tipo = tipo
         self.marca = marca
 
+    @property
+    def nombre(self):
+        return self.nombre
+    
+
+    @nombre.setter
+    def nombre(self, nombre):
+        self.nombre = nombre
+
+    @property
+    def precio(self):
+        return self.precio
+    
+
+    @precio.setter
+    def precio(self, precio):
+        self.precio = precio
+
+    @property
+    def tipo(self):
+        return self.tipo
+
+
+    @tipo.setter
+    def tipo(self, tipo):
+        self.tipo = tipo
+
+    @property
+    def marca(self):
+        return self.marca
+    
+
+    @marca.setter
+    def marca(self, marca):
+        self.nombrmarca = marca
+
+
     def __str__(self):
         to_str = f"Nombre: {self.nombre}\n"
         to_str += f"Precio: {self.precio}\n"
