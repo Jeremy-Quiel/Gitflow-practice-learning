@@ -1,3 +1,5 @@
 class Producto:
-    def __init__(self, nombre):
-        self.nombre = nombre
+
+    @staticmethod
+    def sumar(a, b):
+        return a + b
