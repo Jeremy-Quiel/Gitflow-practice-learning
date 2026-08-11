@@ -8,6 +8,12 @@
 ## Subir Rama y crear PR:
 `git push -u origin (rama)`
 
+## Eliminar Rama:
+`git branch -d (rama)`
+
+## Eliminar origenes no remotos:
+`git remote prune origin`
+
 
 # Proyecto:
 
