@@ -1,50 +1,50 @@
 class Producto:
     def __init__(self, nombre, precio, tipo, marca):
-        self.nombre = nombre
-        self.precio = precio
-        self.tipo = tipo
-        self.marca = marca
+        self.__nombre = nombre
+        self.__precio = precio
+        self.__tipo = tipo
+        self.__marca = marca
 
     @property
     def nombre(self):
-        return self.nombre
+        return self.__nombre
     
     @nombre.setter
     def nombre(self, nombre):
-        self.nombre = nombre
+        self.__nombre = nombre
 
     @property
     def precio(self):
-        return self.precio
+        return self.__precio
     
 
     @precio.setter
     def precio(self, precio):
-        self.precio = precio
+        self.__precio = precio
 
     @property
     def tipo(self):
-        return self.tipo
+        return self.__tipo
 
 
     @tipo.setter
     def tipo(self, tipo):
-        self.tipo = tipo
+        self.__tipo = tipo
 
     @property
     def marca(self):
-        return self.marca
+        return self.__marca
     
 
     @marca.setter
     def marca(self, marca):
-        self.nombrmarca = marca
+        self.__nombrmarca = marca
 
 
     def __str__(self):
-        to_str = f"Nombre: {self.nombre}\n"
-        to_str += f"Precio: {self.precio}\n"
-        to_str += f"Tipo: {self.tipo}\n"
-        to_str += f"Marca: {self.marca}\n"
+        to_str = f"Nombre: {self.__nombre}\n"
+        to_str += f"Precio: {self.__precio}\n"
+        to_str += f"Tipo: {self.__tipo}\n"
+        to_str += f"Marca: {self.__marca}\n"
 
         return to_str
