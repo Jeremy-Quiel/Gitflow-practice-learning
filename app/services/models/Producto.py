@@ -9,7 +9,6 @@ class Producto:
     def nombre(self):
         return self.nombre
     
-
     @nombre.setter
     def nombre(self, nombre):
         self.nombre = nombre
