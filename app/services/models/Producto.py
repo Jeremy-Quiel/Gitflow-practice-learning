@@ -51,7 +51,8 @@ class Producto:
 
 
     def __str__(self):
-        to_str = f"Nombre: {self.nombre}\n"
+        to_str = f"Id: {self.__id}"
+        to_str += f"Nombre: {self.nombre}\n"
         to_str += f"Precio: {self.precio}\n"
         to_str += f"Tipo: {self.tipo}\n"
         to_str += f"Marca: {self.marca}\n"
