@@ -1,9 +1,26 @@
 class Producto:
+<<<<<<< HEAD
+    def __init__(self, id, nombre, precio, tipo, marca):
+        self.__id = id
+        self.nombre = nombre
+        self.precio = precio
+        self.tipo = tipo
+        self.marca = marca
+=======
     def __init__(self, nombre, precio, tipo, marca):
         self.__nombre = nombre
         self.__precio = precio
         self.__tipo = tipo
         self.__marca = marca
+>>>>>>> develop
+
+    @property
+    def id(self):
+        return self.__id
+
+    @id.setter
+    def id(self, id):
+        self.__id = id
 
     @property
     def nombre(self):
@@ -42,9 +59,17 @@ class Producto:
 
 
     def __str__(self):
+<<<<<<< HEAD
+        to_str = f"Id: {self.__id}"
+        to_str += f"Nombre: {self.nombre}\n"
+        to_str += f"Precio: {self.precio}\n"
+        to_str += f"Tipo: {self.tipo}\n"
+        to_str += f"Marca: {self.marca}\n"
+=======
         to_str = f"Nombre: {self.__nombre}\n"
         to_str += f"Precio: {self.__precio}\n"
         to_str += f"Tipo: {self.__tipo}\n"
         to_str += f"Marca: {self.__marca}\n"
+>>>>>>> develop
 
         return to_str
