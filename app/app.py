@@ -1,5 +1,5 @@
-from submenus.comprar import comprar
-from submenus.vender import vender
+from private.app.templates.comprar import comprar
+from private.app.templates.vender import vender
 
 while True:
     print(f"="*20)
