@@ -2,12 +2,24 @@
 ## Cambiar Rama:
 `git checkout (rama)`
 
+`git switch (rama)`
+
 ## Crear Rama:
 `git checkout -b (nueva-rama)`
 
-## Subir Rama y crear PR:
+## Subir Rama para PR
 `git push -u origin (rama)`
 
+## Eliminar Rama:
+`git branch -d (rama)`
+
+## Eliminar origenes no remotos:
+`git remote prune origin`
+
+## Traer cambios de una rama A una rama B:
+`git switch rama-B` o `git checkout rama-B`
+
+`git merge rama-A`
 
 # Proyecto:
 
